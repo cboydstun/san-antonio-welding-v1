@@ -18,9 +18,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Texas Elite Gutters & Exteriors",
+  title: "San Antonio Welding Pros",
   description:
-    "Professional gutter installation and gutter services in San Antonio and Converse, TX",
+    "Professional mobile welding services in San Antonio, TX. On-site welding, structural welding, custom fabrication, and emergency welding repairs.",
 };
 
 export default function RootLayout({
@@ -37,7 +37,7 @@ export default function RootLayout({
       >
         <AuthProvider>
           <Navbar />
-          <main className="flex-grow">{children}</main>
+          <main className="flex-grow pt-20">{children}</main>
           <Footer />
           <AnalyticsWrapper />
         </AuthProvider>

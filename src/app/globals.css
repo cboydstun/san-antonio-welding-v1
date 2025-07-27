@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #e6f2ff;
-  --foreground: #171717;
+  --background: #111827;
+  --foreground: #ffffff;
 }
 
 @theme inline {
@@ -12,15 +12,321 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a4f8c;
-    --foreground: #ededed;
-  }
+/* Industrial Base Styles */
+* {
+  box-sizing: border-box;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    sans-serif;
+  font-weight: 500;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Industrial Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", system-ui, sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 900;
+  letter-spacing: -0.05em;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+}
+
+/* Industrial Button Styles */
+.btn-industrial {
+  padding: 2rem 2rem;
+  font-weight: 700;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background-color: #dc2626;
+  color: white;
+  border: 2px solid #dc2626;
+  transition: all 0.3s ease-in-out;
+  box-shadow:
+    0 10px 25px -3px rgba(0, 0, 0, 0.3),
+    0 4px 6px -2px rgba(0, 0, 0, 0.1);
+  transform: scale(1);
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 100%, 10px 100%);
+}
+
+.btn-industrial:hover {
+  background-color: #ef4444;
+  border-color: #ef4444;
+  box-shadow: 0 0 30px rgba(220, 38, 38, 0.4);
+  transform: scale(1.05);
+}
+
+.btn-industrial:active {
+  transform: scale(0.95);
+}
+
+.btn-secondary {
+  padding: 2rem 2rem;
+  font-weight: 700;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background-color: transparent;
+  color: #dc2626;
+  border: 2px solid #dc2626;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1);
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 100%, 10px 100%);
+}
+
+.btn-secondary:hover {
+  background-color: #dc2626;
+  color: white;
+  transform: scale(1.05);
+}
+
+.btn-secondary:active {
+  transform: scale(0.95);
+}
+
+/* Industrial Card Styles */
+.card-industrial {
+  background-color: #374151;
+  border: 1px solid #6b7280;
+  box-shadow:
+    0 10px 25px -3px rgba(0, 0, 0, 0.3),
+    0 4px 6px -2px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  transform: translateY(0);
+  clip-path: polygon(
+    0 0,
+    calc(100% - 15px) 0,
+    100% calc(100% - 15px),
+    15px 100%,
+    0 100%
+  );
+}
+
+.card-industrial:hover {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  transform: translateY(-0.5rem);
+}
+
+/* Industrial Section Styles */
+.section-dark {
+  background-color: #111827;
+  color: white;
+  background-image:
+    radial-gradient(
+      circle at 25% 25%,
+      rgba(220, 38, 38, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 75% 75%,
+      rgba(55, 65, 81, 0.3) 0%,
+      transparent 50%
+    );
+}
+
+.section-light {
+  background-color: white;
+  color: #111827;
+}
+
+.section-industrial {
+  background: linear-gradient(135deg, #111827 0%, #374151 100%);
+  color: white;
+}
+
+/* Industrial Animations */
+@keyframes spark {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(220, 38, 38, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(220, 38, 38, 0.6);
+  }
+}
+
+.animate-spark {
+  animation: spark 2s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 3s ease-in-out infinite;
+}
+
+/* Industrial Form Styles */
+.form-industrial input,
+.form-industrial textarea,
+.form-industrial select {
+  background-color: #1f2937;
+  border: 2px solid #6b7280;
+  color: white;
+  padding: 0.75rem 1rem;
+  font-weight: 500;
+  transition: all 0.3s;
+  clip-path: polygon(
+    0 0,
+    calc(100% - 5px) 0,
+    100% calc(100% - 5px),
+    5px 100%,
+    0 100%
+  );
+}
+
+.form-industrial input:focus,
+.form-industrial textarea:focus,
+.form-industrial select:focus {
+  border-color: #dc2626;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(220, 38, 38, 0.2);
+}
+
+.form-industrial input::placeholder,
+.form-industrial textarea::placeholder {
+  color: #9ca3af;
+}
+
+/* Industrial Navigation */
+.nav-industrial {
+  background-color: rgba(17, 24, 39, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(220, 38, 38, 0.2);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+/* Industrial Hero Overlay */
+.hero-overlay {
+  background: linear-gradient(
+    135deg,
+    rgba(17, 24, 39, 0.9) 0%,
+    rgba(55, 65, 81, 0.8) 50%,
+    rgba(220, 38, 38, 0.3) 100%
+  );
+}
+
+/* Industrial Text Effects */
+.text-glow {
+  text-shadow: 0 0 20px rgba(220, 38, 38, 0.5);
+}
+
+.text-industrial {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: linear-gradient(135deg, #dc2626 0%, #fcd34d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Industrial Dividers */
+.divider-industrial {
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    #dc2626 50%,
+    transparent 100%
+  );
+  position: relative;
+}
+
+.divider-industrial::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 8px;
+  background: #fcd34d;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+/* Responsive Industrial Design */
+@media (max-width: 768px) {
+  .btn-industrial,
+  .btn-secondary {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .card-industrial {
+    clip-path: polygon(
+      0 0,
+      calc(100% - 10px) 0,
+      100% calc(100% - 10px),
+      10px 100%,
+      0 100%
+    );
+  }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111827;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dc2626;
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ef4444;
+}
+
+/* Selection Styling */
+::selection {
+  background: #dc2626;
+  color: white;
+}
+
+::-moz-selection {
+  background: #dc2626;
+  color: white;
 }

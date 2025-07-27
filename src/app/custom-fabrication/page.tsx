@@ -3,23 +3,24 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "San Antonio Welding Pros | Professional Mobile Welding Services",
+  title: "Custom Fabrication Services San Antonio | San Antonio Welding Pros",
   description:
-    "Professional mobile welding services in San Antonio, TX. On-site welding, structural welding, custom fabrication, and emergency welding repairs. We come to you!",
+    "Custom metal fabrication in San Antonio, TX. Gates, railings, brackets, architectural metalwork, and specialized components. From design to installation.",
+
   keywords:
-    "san antonio welding, san antonio mobile welding, mobile welder san antonio, on-site welding, structural welding, custom fabrication, emergency welding, welding repairs, San Antonio, New Braunfels, Cibolo, Seguin, Texas",
+    "custom fabrication, metal fabrication, custom metalwork, gates, railings, brackets, architectural metalwork, custom welding, San Antonio fabrication, custom steel work, San Antonio, New Braunfels, Cibolo, Seguin, Texas",
   openGraph: {
-    title: "San Antonio Welding Pros | Professional Mobile Welding Services",
+    title: "Custom Fabrication Services San Antonio | San Antonio Welding Pros",
     description:
-      "Professional mobile welding services in San Antonio, TX. On-site welding, structural welding, custom fabrication, and emergency welding repairs.",
-    url: "https://sanantonioweldingpros.com",
+      "Custom metal fabrication in San Antonio, TX. Gates, railings, brackets, architectural metalwork, and specialized components.",
+    url: "https://sanantonioweldingpros.com/custom-fabrication",
     siteName: "San Antonio Welding Pros",
     images: [
       {
         url: "/hero-welding-image.jpg",
         width: 1200,
         height: 630,
-        alt: "San Antonio Welding Pros - Mobile Welding Services",
+        alt: "Custom Fabrication Services San Antonio",
       },
     ],
     locale: "en_US",
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Home() {
+export default function CustomFabrication() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -36,7 +37,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/hero-welding-image.jpg"
-            alt="Professional Mobile Welding Services"
+            alt="Custom Fabrication Services"
             fill
             priority
             className="object-cover"
@@ -49,16 +50,16 @@ export default function Home() {
           <div className="max-w-5xl mx-auto">
             {/* Main Headline */}
             <h1 className="text-hero font-black text-white mb-8 leading-none">
-              <span className="block text-glow">PROFESSIONAL</span>
+              <span className="block text-glow">CUSTOM</span>
               <span className="block text-industrial bg-gradient-to-r from-primary to-safety bg-clip-text text-transparent">
-                MOBILE WELDING
+                FABRICATION
               </span>
               <span className="block text-white">SERVICES</span>
             </h1>
 
             {/* Subheadline */}
             <p className="text-2xl md:text-3xl font-bold text-steel-light mb-12 uppercase tracking-wide">
-              WE BRING THE SHOP TO YOU
+              FROM CONCEPT TO COMPLETION
             </p>
 
             {/* Location Badge */}
@@ -76,12 +77,12 @@ export default function Home() {
               >
                 <path
                   fillRule="evenodd"
-                  d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                  d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
                   clipRule="evenodd"
                 />
               </svg>
               <span className="text-white font-bold uppercase tracking-wider">
-                SERVING SAN ANTONIO & SURROUNDING AREAS
+                CUSTOM METALWORK SPECIALISTS
               </span>
             </div>
 
@@ -98,10 +99,10 @@ export default function Home() {
                 >
                   <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                 </svg>
-                EMERGENCY WELDING
+                GET CUSTOM QUOTE
               </a>
-              <Link href="/mobile-welding-services" className="btn-secondary">
-                VIEW SERVICES
+              <Link href="/welding-services" className="btn-secondary">
+                WELDING SERVICES
               </Link>
             </div>
 
@@ -110,19 +111,19 @@ export default function Home() {
               <div className="flex items-center space-x-2">
                 <div className="w-3 h-3 bg-safety animate-spark"></div>
                 <span className="font-bold uppercase tracking-wide">
-                  24/7 EMERGENCY
+                  CUSTOM DESIGN
                 </span>
               </div>
               <div className="flex items-center space-x-2">
                 <div className="w-3 h-3 bg-safety animate-spark"></div>
                 <span className="font-bold uppercase tracking-wide">
-                  CERTIFIED WELDERS
+                  PRECISION FABRICATION
                 </span>
               </div>
               <div className="flex items-center space-x-2">
                 <div className="w-3 h-3 bg-safety animate-spark"></div>
                 <span className="font-bold uppercase tracking-wide">
-                  FULLY INSURED
+                  PROFESSIONAL INSTALLATION
                 </span>
               </div>
             </div>
@@ -137,111 +138,21 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Section */}
+      {/* What We Fabricate Section */}
       <section className="section-dark py-24">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-mega font-black text-white mb-6">
-              OUR <span className="text-industrial">WELDING SERVICES</span>
+              WHAT WE <span className="text-industrial">FABRICATE</span>
             </h2>
             <div className="divider-industrial w-32 mx-auto mb-8"></div>
             <p className="text-xl text-steel-light max-w-3xl mx-auto font-semibold uppercase tracking-wide">
-              PROFESSIONAL MOBILE WELDING SOLUTIONS FOR EVERY PROJECT
+              CUSTOM METALWORK FOR EVERY APPLICATION
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Mobile Welding */}
-            <div className="card-industrial p-8 text-white group hover:bg-primary/10 transition-all duration-300">
-              <div className="flex items-center mb-6">
-                <div
-                  className="w-16 h-16 bg-primary flex items-center justify-center mr-4 group-hover:animate-spark"
-                  style={{
-                    clipPath:
-                      "polygon(0 0, calc(100% - 8px) 0, 100% calc(100% - 8px), 8px 100%, 0 100%)",
-                  }}
-                >
-                  <svg
-                    className="w-8 h-8 text-white"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z" />
-                  </svg>
-                </div>
-                <h3 className="text-2xl font-black uppercase">
-                  MOBILE WELDING
-                </h3>
-              </div>
-              <p className="text-steel-light mb-6 leading-relaxed">
-                On-site welding services brought directly to your location.
-                Emergency repairs, equipment welding, and structural work.
-              </p>
-              <Link
-                href="/mobile-welding-services"
-                className="inline-flex items-center text-safety font-bold uppercase tracking-wide hover:text-safety-light transition-colors group"
-              >
-                LEARN MORE
-                <svg
-                  className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </Link>
-            </div>
-
-            {/* Structural Welding */}
-            <div className="card-industrial p-8 text-white group hover:bg-primary/10 transition-all duration-300">
-              <div className="flex items-center mb-6">
-                <div
-                  className="w-16 h-16 bg-primary flex items-center justify-center mr-4 group-hover:animate-spark"
-                  style={{
-                    clipPath:
-                      "polygon(0 0, calc(100% - 8px) 0, 100% calc(100% - 8px), 8px 100%, 0 100%)",
-                  }}
-                >
-                  <svg
-                    className="w-8 h-8 text-white"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
-                  </svg>
-                </div>
-                <h3 className="text-2xl font-black uppercase">
-                  STRUCTURAL WELDING
-                </h3>
-              </div>
-              <p className="text-steel-light mb-6 leading-relaxed">
-                Professional structural welding for buildings, frameworks,
-                supports, and industrial applications.
-              </p>
-              <Link
-                href="/welding-services"
-                className="inline-flex items-center text-safety font-bold uppercase tracking-wide hover:text-safety-light transition-colors group"
-              >
-                LEARN MORE
-                <svg
-                  className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </Link>
-            </div>
-
-            {/* Custom Fabrication */}
+            {/* Gates & Railings */}
             <div className="card-industrial p-8 text-white group hover:bg-primary/10 transition-all duration-300">
               <div className="flex items-center mb-6">
                 <div
@@ -258,51 +169,217 @@ export default function Home() {
                   >
                     <path
                       fillRule="evenodd"
-                      d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
+                      d="M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 01-1.414 1.414L5 6.414V8a1 1 0 01-2 0V4zm9 1a1 1 0 010-2h4a1 1 0 011 1v4a1 1 0 01-2 0V6.414l-2.293 2.293a1 1 0 11-1.414-1.414L13.586 5H12zm-9 7a1 1 0 012 0v1.586l2.293-2.293a1 1 0 111.414 1.414L6.414 15H8a1 1 0 010 2H4a1 1 0 01-1-1v-4zm13-1a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 010-2h1.586l-2.293-2.293a1 1 0 111.414-1.414L15 13.586V12a1 1 0 011-1z"
                       clipRule="evenodd"
                     />
                   </svg>
                 </div>
                 <h3 className="text-2xl font-black uppercase">
-                  CUSTOM FABRICATION
+                  GATES & RAILINGS
                 </h3>
               </div>
               <p className="text-steel-light mb-6 leading-relaxed">
-                Custom metalwork, gates, railings, brackets, and specialized
-                components designed to your specifications.
+                Custom security gates, decorative railings, stair railings, and
+                perimeter fencing designed to your specifications.
               </p>
-              <Link
-                href="/custom-fabrication"
-                className="inline-flex items-center text-safety font-bold uppercase tracking-wide hover:text-safety-light transition-colors group"
-              >
-                LEARN MORE
-                <svg
-                  className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
+              <div className="text-safety font-bold uppercase tracking-wide">
+                • Security Gates
+                <br />
+                • Decorative Railings
+                <br />
+                • Stair Railings
+                <br />• Perimeter Fencing
+              </div>
+            </div>
+
+            {/* Brackets & Supports */}
+            <div className="card-industrial p-8 text-white group hover:bg-primary/10 transition-all duration-300">
+              <div className="flex items-center mb-6">
+                <div
+                  className="w-16 h-16 bg-primary flex items-center justify-center mr-4 group-hover:animate-spark"
+                  style={{
+                    clipPath:
+                      "polygon(0 0, calc(100% - 8px) 0, 100% calc(100% - 8px), 8px 100%, 0 100%)",
+                  }}
                 >
-                  <path
-                    fillRule="evenodd"
-                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </Link>
+                  <svg
+                    className="w-8 h-8 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-black uppercase">
+                  BRACKETS & SUPPORTS
+                </h3>
+              </div>
+              <p className="text-steel-light mb-6 leading-relaxed">
+                Heavy-duty brackets, structural supports, mounting hardware, and
+                specialized components for industrial applications.
+              </p>
+              <div className="text-safety font-bold uppercase tracking-wide">
+                • Heavy-Duty Brackets
+                <br />
+                • Structural Supports
+                <br />
+                • Mounting Hardware
+                <br />• Load-Bearing Components
+              </div>
+            </div>
+
+            {/* Architectural Elements */}
+            <div className="card-industrial p-8 text-white group hover:bg-primary/10 transition-all duration-300">
+              <div className="flex items-center mb-6">
+                <div
+                  className="w-16 h-16 bg-primary flex items-center justify-center mr-4 group-hover:animate-spark"
+                  style={{
+                    clipPath:
+                      "polygon(0 0, calc(100% - 8px) 0, 100% calc(100% - 8px), 8px 100%, 0 100%)",
+                  }}
+                >
+                  <svg
+                    className="w-8 h-8 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-black uppercase">
+                  ARCHITECTURAL ELEMENTS
+                </h3>
+              </div>
+              <p className="text-steel-light mb-6 leading-relaxed">
+                Decorative metalwork, artistic features, building accents, and
+                custom architectural components.
+              </p>
+              <div className="text-safety font-bold uppercase tracking-wide">
+                • Decorative Metalwork
+                <br />
+                • Building Accents
+                <br />
+                • Artistic Features
+                <br />• Custom Signage
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Why Choose Us Section */}
+      {/* Process Overview */}
       <section className="section-light py-24">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-mega font-black text-deep mb-6">
+              OUR <span className="text-industrial">FABRICATION PROCESS</span>
+            </h2>
+            <div className="divider-industrial w-32 mx-auto mb-8"></div>
+            <p className="text-xl text-steel max-w-3xl mx-auto font-semibold uppercase tracking-wide">
+              FROM INITIAL CONCEPT TO FINAL INSTALLATION
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+            {/* Step 1: Design */}
+            <div className="text-center">
+              <div
+                className="w-24 h-24 bg-primary mx-auto mb-6 flex items-center justify-center animate-spark"
+                style={{
+                  clipPath:
+                    "polygon(0 0, calc(100% - 12px) 0, 100% calc(100% - 12px), 12px 100%, 0 100%)",
+                }}
+              >
+                <span className="text-3xl font-black text-white">1</span>
+              </div>
+              <h3 className="text-2xl font-black text-deep uppercase mb-4">
+                DESIGN
+              </h3>
+              <p className="text-steel text-lg leading-relaxed">
+                Consultation, measurements, and custom design creation based on
+                your specifications and requirements.
+              </p>
+            </div>
+
+            {/* Step 2: Engineering */}
+            <div className="text-center">
+              <div
+                className="w-24 h-24 bg-primary mx-auto mb-6 flex items-center justify-center animate-spark"
+                style={{
+                  clipPath:
+                    "polygon(0 0, calc(100% - 12px) 0, 100% calc(100% - 12px), 12px 100%, 0 100%)",
+                }}
+              >
+                <span className="text-3xl font-black text-white">2</span>
+              </div>
+              <h3 className="text-2xl font-black text-deep uppercase mb-4">
+                ENGINEERING
+              </h3>
+              <p className="text-steel text-lg leading-relaxed">
+                Structural analysis, material selection, and detailed
+                fabrication drawings for precision manufacturing.
+              </p>
+            </div>
+
+            {/* Step 3: Fabrication */}
+            <div className="text-center">
+              <div
+                className="w-24 h-24 bg-primary mx-auto mb-6 flex items-center justify-center animate-spark"
+                style={{
+                  clipPath:
+                    "polygon(0 0, calc(100% - 12px) 0, 100% calc(100% - 12px), 12px 100%, 0 100%)",
+                }}
+              >
+                <span className="text-3xl font-black text-white">3</span>
+              </div>
+              <h3 className="text-2xl font-black text-deep uppercase mb-4">
+                FABRICATION
+              </h3>
+              <p className="text-steel text-lg leading-relaxed">
+                Precision cutting, welding, and assembly using
+                professional-grade equipment and certified techniques.
+              </p>
+            </div>
+
+            {/* Step 4: Installation */}
+            <div className="text-center">
+              <div
+                className="w-24 h-24 bg-primary mx-auto mb-6 flex items-center justify-center animate-spark"
+                style={{
+                  clipPath:
+                    "polygon(0 0, calc(100% - 12px) 0, 100% calc(100% - 12px), 12px 100%, 0 100%)",
+                }}
+              >
+                <span className="text-3xl font-black text-white">4</span>
+              </div>
+              <h3 className="text-2xl font-black text-deep uppercase mb-4">
+                INSTALLATION
+              </h3>
+              <p className="text-steel text-lg leading-relaxed">
+                Professional installation, finishing, and quality inspection to
+                ensure perfect fit and function.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Materials & Capabilities */}
+      <section className="section-dark py-24">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-mega font-black text-deep mb-8">
-                WHY CHOOSE{" "}
-                <span className="text-industrial">
-                  SAN ANTONIO WELDING PROS
-                </span>
+              <h2 className="text-mega font-black text-white mb-8">
+                MATERIALS &{" "}
+                <span className="text-industrial">CAPABILITIES</span>
               </h2>
               <div className="divider-industrial w-32 mb-8"></div>
 
@@ -328,12 +405,12 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-2xl font-black text-deep uppercase mb-2">
-                      24/7 EMERGENCY RESPONSE
+                    <h3 className="text-2xl font-black text-white uppercase mb-2">
+                      STEEL & STAINLESS STEEL
                     </h3>
-                    <p className="text-steel text-lg leading-relaxed">
-                      Equipment breakdowns don't wait for business hours. Our
-                      emergency welding services are available around the clock.
+                    <p className="text-steel-light text-lg leading-relaxed">
+                      Carbon steel, stainless steel, and specialty alloys for
+                      durability and corrosion resistance.
                     </p>
                   </div>
                 </div>
@@ -359,12 +436,12 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-2xl font-black text-deep uppercase mb-2">
-                      CERTIFIED PROFESSIONALS
+                    <h3 className="text-2xl font-black text-white uppercase mb-2">
+                      ALUMINUM & EXOTIC METALS
                     </h3>
-                    <p className="text-steel text-lg leading-relaxed">
-                      Our welders are certified and experienced in multiple
-                      welding processes and industrial applications.
+                    <p className="text-steel-light text-lg leading-relaxed">
+                      Lightweight aluminum and specialized metals for unique
+                      applications and environments.
                     </p>
                   </div>
                 </div>
@@ -390,12 +467,12 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-2xl font-black text-deep uppercase mb-2">
-                      FULLY EQUIPPED MOBILE UNITS
+                    <h3 className="text-2xl font-black text-white uppercase mb-2">
+                      FINISHING OPTIONS
                     </h3>
-                    <p className="text-steel text-lg leading-relaxed">
-                      Professional-grade equipment and tools brought directly to
-                      your location for maximum efficiency.
+                    <p className="text-steel-light text-lg leading-relaxed">
+                      Powder coating, galvanizing, painting, and specialty
+                      finishes for protection and aesthetics.
                     </p>
                   </div>
                 </div>
@@ -411,32 +488,36 @@ export default function Home() {
                 }}
               >
                 <h3 className="text-2xl font-black uppercase mb-6 text-safety">
-                  GET INSTANT QUOTE
+                  CUSTOM PROJECT QUOTE
                 </h3>
+                <p className="text-steel-light mb-6 text-lg">
+                  Every custom fabrication project is unique. Tell us about your
+                  vision and we'll provide a detailed quote.
+                </p>
                 <div className="space-y-4">
                   <div className="form-industrial">
                     <input
                       type="text"
-                      placeholder="YOUR NAME"
+                      placeholder="PROJECT TYPE"
                       className="w-full"
                     />
                   </div>
                   <div className="form-industrial">
                     <input
-                      type="tel"
-                      placeholder="PHONE NUMBER"
+                      type="text"
+                      placeholder="MATERIALS PREFERRED"
                       className="w-full"
                     />
                   </div>
                   <div className="form-industrial">
                     <textarea
-                      placeholder="DESCRIBE YOUR PROJECT"
+                      placeholder="PROJECT DESCRIPTION"
                       rows={4}
                       className="w-full resize-none"
                     ></textarea>
                   </div>
                   <button className="btn-industrial w-full">
-                    GET FREE QUOTE
+                    GET CUSTOM QUOTE
                   </button>
                 </div>
               </div>
@@ -449,13 +530,13 @@ export default function Home() {
       <section className="section-industrial py-24">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-mega font-black text-white mb-8">
-            READY FOR <span className="text-safety">PROFESSIONAL WELDING?</span>
+            READY FOR <span className="text-safety">CUSTOM FABRICATION?</span>
           </h2>
           <p className="text-2xl text-steel-light mb-12 max-w-3xl mx-auto font-semibold uppercase tracking-wide">
-            DON'T LET WELDING NEEDS DISRUPT YOUR OPERATIONS
+            BRING YOUR METALWORK VISION TO LIFE
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-8 justify-center items-center mb-16">
             <a
               href="tel:210-555-9353"
               className="btn-industrial animate-glow text-2xl px-12 py-6"
@@ -471,7 +552,7 @@ export default function Home() {
             </a>
           </div>
 
-          <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div
               className="bg-deep/50 p-6 backdrop-blur-sm border border-primary/20"
               style={{
@@ -479,9 +560,21 @@ export default function Home() {
                   "polygon(0 0, calc(100% - 12px) 0, 100% calc(100% - 12px), 12px 100%, 0 100%)",
               }}
             >
-              <div className="text-4xl font-black text-safety mb-2">24/7</div>
+              <div className="text-4xl font-black text-safety mb-2">CUSTOM</div>
               <div className="text-white font-bold uppercase tracking-wide">
-                EMERGENCY SERVICE
+                DESIGN & ENGINEERING
+              </div>
+            </div>
+            <div
+              className="bg-deep/50 p-6 backdrop-blur-sm border border-primary/20"
+              style={{
+                clipPath:
+                  "polygon(0 0, calc(100% - 12px) 0, 100% calc(100% - 12px), 12px 100%, 0 100%)",
+              }}
+            >
+              <div className="text-4xl font-black text-safety mb-2">FREE</div>
+              <div className="text-white font-bold uppercase tracking-wide">
+                PROJECT CONSULTATION
               </div>
             </div>
             <div
@@ -494,18 +587,6 @@ export default function Home() {
               <div className="text-4xl font-black text-safety mb-2">100%</div>
               <div className="text-white font-bold uppercase tracking-wide">
                 SATISFACTION GUARANTEED
-              </div>
-            </div>
-            <div
-              className="bg-deep/50 p-6 backdrop-blur-sm border border-primary/20"
-              style={{
-                clipPath:
-                  "polygon(0 0, calc(100% - 12px) 0, 100% calc(100% - 12px), 12px 100%, 0 100%)",
-              }}
-            >
-              <div className="text-4xl font-black text-safety mb-2">FREE</div>
-              <div className="text-white font-bold uppercase tracking-wide">
-                ON-SITE ESTIMATES
               </div>
             </div>
           </div>
